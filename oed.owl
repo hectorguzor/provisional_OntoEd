@@ -13,6 +13,7 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.ifomis.org/bfo/1.1</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <Literal>The primary focus of oed is to define and represent entities and relationships in education, ranging from K-12 to postsecondary institutions. By defining classes such as organization, enrollment, assignment, assessment, and more, oed helps education professionals communicate clearly about educational services. This clear and precise vocabulary enables educational institutions to annotate, integrate, and analyze data to improve educational outcomes.</Literal>
