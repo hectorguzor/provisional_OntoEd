@@ -1,3 +1,4 @@
 oed ID	label	alternative term	definition	definition source	example of usage	term editor	"ontology term requester	term tracker item"	logical type	parent class
-	assessment		The process of testing and documenting knowledge or skills based on previous instruction in order to refine and improve student learning.	https://en.wikipedia.org/wiki/Educational_assessment			https://github.com/hectorguzor/provisional_OntoEd/issues/2	subclass	process
-	curriculum								
+1000001	assessment								
+1000002	curriculum      The process of testing and documenting knowledge or skills based on previous instruction in order to refine and improve student learning.	https://en.wikipedia.org/wiki/Educational_assessment			https://github.com/hectorguzor/provisional_OntoEd/issues/2	subclass	process								
+1000003	dean role								
