@@ -19,8 +19,25 @@
         <Literal>The primary focus of oed is to define and represent entities and relationships in education, ranging from K-12 to postsecondary institutions. By defining classes such as organization, enrollment, assignment, assessment, and more, oed helps education professionals communicate clearly about educational services. This clear and precise vocabulary enables educational institutions to annotate, integrate, and analyze data to improve educational outcomes.</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#1000003"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
     </Declaration>
+    <SubClassOf>
+        <Class IRI="#1000003"/>
+        <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#1000003</IRI>
+        <Literal xml:lang="en">Anthony</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#1000003</IRI>
+        <Literal xml:lang="en">dean roal</Literal>
+    </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
