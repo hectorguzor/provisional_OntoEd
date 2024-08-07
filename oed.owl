@@ -22,10 +22,10 @@
         <Class IRI="#1000003"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="oed.owl#1000004"/>
     </Declaration>
     <Declaration>
-        <Class IRI="oed.owl#1000004"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -41,12 +41,12 @@
         <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-        <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Object"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="oed.owl#1000004"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Object"/>
     </SubClassOf>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -77,6 +77,36 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
         <IRI>#1000003</IRI>
         <Literal>Dean of csusb for college of natural sciences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>oed.owl#1000004</IRI>
+        <Literal>A person that satisfies the requirements for dean role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000233"/>
+        <IRI>oed.owl#1000004</IRI>
+        <Literal>https://github.com/hectorguzor/provisional_OntoEd/issues/13</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>oed.owl#1000004</IRI>
+        <Literal>Anthony Macias</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
+        <IRI>oed.owl#1000004</IRI>
+        <Literal>https://github.com/hectorguzor/provisional_OntoEd/issues/13</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>oed.owl#1000004</IRI>
+        <Literal>dean</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>oed.owl#1000004</IRI>
+        <Literal>Sastry Pantula is a dean of CSUSB</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -124,7 +154,7 @@
         <Literal>A person is an object that has certain capacities or attributes constituting personhood.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
         <IRI>http://www.w3.org/ns/prov#Person</IRI>
         <Literal>https://ontobee.org/ontology/SIO?iri=http://semanticscience.org/resource/SIO_000498</Literal>
     </AnnotationAssertion>
@@ -137,36 +167,6 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
         <IRI>http://www.w3.org/ns/prov#Person</IRI>
         <Literal>LeBron James</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>oed.owl#1000004</IRI>
-        <Literal>A person that satisfies the requirements for dean role.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000233"/>
-        <IRI>oed.owl#1000004</IRI>
-        <Literal>https://github.com/hectorguzor/provisional_OntoEd/issues/13</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
-        <IRI>oed.owl#1000004</IRI>
-        <Literal>Anthony Macias</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:source"/>
-        <IRI>oed.owl#1000004</IRI>
-        <Literal>https://github.com/hectorguzor/provisional_OntoEd/issues/13</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>oed.owl#1000004</IRI>
-        <Literal>dean</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-        <IRI>oed.owl#1000004</IRI>
-        <Literal>Sastry Pantula is a dean of CSUSB</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
