@@ -12,3 +12,79 @@ We use git and GitHub to develop OED. There's a lot of good documentation on bot
 
 <br>Here is the <a href="https://git-scm.com/">git website</a> with files and documentation<br>
 Also check out the <a href="https://docs.github.com/en/get-started/using-github/github-flow">GitHub work flow  website</a>
+
+# how_to_help
+
+### 1. Create a Fork of the Repository
+   - If you don’t have write access to the repository, first **fork** the repository.
+   - Go to the repository page and click the "Fork" button in the top-right corner.
+   - This creates your own copy of the repository where you can make changes safely.
+
+### 2. Clone the Repository (Optional)
+   - If you prefer working locally, clone your fork:
+     ```bash
+     git clone https://github.com/your-username/repository-name.git
+     ```
+   - Navigate into the repository directory:
+     ```bash
+     cd repository-name
+     ```
+
+### 3. **Create a New Branch**
+   - Always work on a new branch when recommending changes. This isolates your work from the `main` branch:
+     ```bash
+     git checkout -b recommended-changes
+     ```
+   - If you’re working on GitHub’s web interface, create a new branch from the branch dropdown menu.
+
+### 4. **Make Your Changes**
+   - Edit the file(s) in the branch you just created.
+   - Be as clear and precise as possible in your edits.
+
+### 5. **Commit the Changes**
+   - After making your edits, commit them with a detailed message explaining why the changes are being recommended:
+     ```bash
+     git add .
+     git commit -m "Recommended changes: [Brief description]"
+     ```
+   - On GitHub, fill out the commit message and commit directly to the new branch.
+
+### 6. **Push Your Branch (If Working Locally)**
+   - Push your changes to your forked repository on GitHub:
+     ```bash
+     git push origin recommended-changes
+     ```
+
+### 7. **Create a Pull Request (PR)**
+   - Go to your forked repository on GitHub.
+   - You’ll see a prompt to compare and create a pull request for the new branch. Click "Compare & pull request."
+   - In the PR description, explain the context of your changes, why they’re necessary, and any potential impact.
+
+### 8. **Request Feedback**
+   - Add relevant collaborators or maintainers as reviewers to the PR.
+   - Politely ask for feedback and discuss your recommendations.
+
+### 9. **Be Open to Revisions**
+   - Be prepared to discuss your changes and make revisions based on feedback.
+   - Use GitHub’s PR comments feature to engage in discussions about the changes.
+
+### 10. **Resolve Conflicts and Update**
+   - If there are merge conflicts, resolve them by rebasing your branch or merging the latest changes from the main branch:
+     ```bash
+     git fetch origin
+     git checkout main
+     git merge origin/main
+     git checkout recommended-changes
+     git rebase main
+     ```
+   - Push the resolved changes back to your fork:
+     ```bash
+     git push origin recommended-changes --force
+     ```
+
+### 11. **Final Approval and Merge**
+   - Once all discussions are resolved and the maintainers are satisfied, the PR will be approved and merged.
+   - This will integrate your recommended changes into the main repository.
+
+### 12. **Follow-Up**
+   - After the merge, follow up to see how the changes are working out and if further adjustments are needed.
