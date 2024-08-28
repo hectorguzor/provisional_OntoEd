@@ -28,13 +28,16 @@
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </Declaration>
     <Declaration>
-	<AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -82,6 +85,11 @@
         <Literal>Dean of csusb for college of natural sciences</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>oed.owl#1000004</IRI>
+        <Literal>Sastry Pantula is a dean of CSUSB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>oed.owl#1000004</IRI>
         <Literal>A person that satisfies the requirements for dean role.</Literal>
@@ -107,9 +115,29 @@
         <Literal>dean</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-        <IRI>oed.owl#1000004</IRI>
-        <Literal>Sastry Pantula is a dean of CSUSB</Literal>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000112</IRI>
+        <Literal>A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000233"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000112</IRI>
+        <Literal>https://github.com/hectorguzor/provisional_OntoEd/issues/21</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000112</IRI>
+        <Literal>GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000112</IRI>
+        <Literal>Daniel Schober</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000112</IRI>
+        <Literal>example of usage</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -132,6 +160,11 @@
         <Literal>definition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000233</IRI>
+        <Literal>the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000233</IRI>
         <Literal>An IRI or similar locator for a request or discussion of an ontology term.</Literal>
@@ -147,9 +180,9 @@
         <Literal>term tracker item</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000233</IRI>
-        <Literal>the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/.</Literal>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://www.w3.org/ns/prov#Person</IRI>
+        <Literal>Lebron James is a person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -165,11 +198,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.w3.org/ns/prov#Person</IRI>
         <Literal>person</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-        <IRI>http://www.w3.org/ns/prov#Person</IRI>
-        <Literal>LeBron James</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
