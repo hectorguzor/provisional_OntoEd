@@ -19,10 +19,16 @@
         <Literal>The primary focus of oed is to define and represent entities and relationships in education, ranging from K-12 to postsecondary institutions. By defining classes such as organization, enrollment, assignment, assessment, and more, oed helps education professionals communicate clearly about educational services. This clear and precise vocabulary enables educational institutions to annotate, integrate, and analyze data to improve educational outcomes.</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#Academic_Curriculum"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#1000003"/>
     </Declaration>
     <Declaration>
         <Class IRI="oed.owl#1000004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
@@ -34,6 +40,9 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000233"/>
     </Declaration>
     <Declaration>
@@ -42,6 +51,13 @@
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Academic_Curriculum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#1000003"/>
         <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Role"/>
@@ -51,9 +67,33 @@
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <Class IRI="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
         <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Object"/>
     </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#Academic_Curriculum</IRI>
+        <Literal>A curriculum for a high school algebra course might consist of practice sheets, online videos, and in class assignments. All these information entities together mke up the curriculum for the course.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Academic_Curriculum</IRI>
+        <Literal>A generically dependent continuant constittued by a collection of information content entities, each enity being about the same subject matter with some entities having a cumultive relationship with others, which imparts upon students proficient knowledge of that subject matter and is determinative of successful completion of a course in that subject matter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#Academic_Curriculum</IRI>
+        <Literal>Timothy Simmons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Academic_Curriculum</IRI>
+        <Literal>Academic Curriculum</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#1000003</IRI>
@@ -115,6 +155,26 @@
         <Literal>dean</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
+        <Literal>A document detailing how to fix a computer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
+        <Literal>A generically dependent continuant that is about some thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
+        <Literal>https://www.ebi.ac.uk/ols4/ontologies/iao/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FIAO_0000030?lang=en</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
+        <Literal>Information Content Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000112</IRI>
         <Literal>A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</Literal>
@@ -160,6 +220,26 @@
         <Literal>definition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000119</IRI>
+        <Literal>Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000119</IRI>
+        <Literal>https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000119</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000119</IRI>
+        <Literal>Timothy Simmons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000119</IRI>
+        <Literal>Definition Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000233</IRI>
         <Literal>the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/.</Literal>
@@ -178,11 +258,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000233</IRI>
         <Literal>term tracker item</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>http://www.w3.org/ns/prov#Person</IRI>
-        <Literal>Lebron James is a person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -210,6 +285,11 @@
         <Literal>imported from</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://www.w3.org/ns/prov#Person</IRI>
+        <Literal>Lebron James is a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://www.w3.org/ns/prov#Person</IRI>
         <Literal>A person is an object that has certain capacities or attributes constituting personhood.</Literal>
@@ -232,5 +312,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
