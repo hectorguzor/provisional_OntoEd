@@ -22,6 +22,18 @@
         <Class IRI="#Academic_Curriculum"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#professor_role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#student_role"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#1000003"/>
     </Declaration>
     <Declaration>
@@ -59,6 +71,22 @@
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#professor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#professor_role"/>
+        <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#student"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#student_role"/>
+        <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#1000003"/>
         <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     </SubClassOf>
@@ -93,6 +121,86 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Academic_Curriculum</IRI>
         <Literal>Academic Curriculum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#professor</IRI>
+        <Literal>Hector is a professor of philosophy at Mt. San Jacinto College</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#professor</IRI>
+        <Literal>A person that satisfies the professor role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#professor</IRI>
+        <Literal>Timothy Simmons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#professor</IRI>
+        <Literal>professor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#professor_role</IRI>
+        <Literal>A person satisfying the professor role might conduct research in philosophical logic while also being the head of the philosophy department at their university.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#professor_role</IRI>
+        <Literal>A role in a higher educational institution consisting in conducting research in a field of expertise, leading lectures and seminars in that field of expertise, and taking on additional manaegerial roles such as department chair or lead researcher for a particular project or institute.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#professor_role</IRI>
+        <Literal>Timothy Simmons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#professor_role</IRI>
+        <Literal>professor role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#student</IRI>
+        <Literal>Timothy Simmons was a student at CSUSB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#student</IRI>
+        <Literal>A person that satisfies the student role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#student</IRI>
+        <Literal>Timothy Simmons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#student</IRI>
+        <Literal>student</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#student_role</IRI>
+        <Literal>A person attending a university and taking courses in philosophy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#student_role</IRI>
+        <Literal>A role consisting in attending an educational institution and completing courses to obtain proficient knowledge in some specified subject(s).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#student_role</IRI>
+        <Literal>Timothy Simmons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#student_role</IRI>
+        <Literal>student role</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
