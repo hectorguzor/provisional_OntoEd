@@ -19,7 +19,16 @@
         <Literal>The primary focus of oed is to define and represent entities and relationships in education, ranging from K-12 to postsecondary institutions. By defining classes such as organization, enrollment, assignment, assessment, and more, oed helps education professionals communicate clearly about educational services. This clear and precise vocabulary enables educational institutions to annotate, integrate, and analyze data to improve educational outcomes.</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="http://purl.bioontology.org/ontology/MESH/D009938"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#1000003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#1000005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#1000006"/>
     </Declaration>
     <Declaration>
         <Class IRI="oed.owl#1000004"/>
@@ -43,8 +52,20 @@
         <AnnotationProperty abbreviatedIRI="dc:description"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="http://purl.bioontology.org/ontology/MESH/D009938"/>
+        <Class IRI="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#1000003"/>
         <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1000005"/>
+        <Class IRI="http://purl.bioontology.org/ontology/MESH/D009938"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1000006"/>
+        <Class IRI="#1000005"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="oed.owl#1000004"/>
@@ -54,6 +75,31 @@
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
         <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Object"/>
     </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.bioontology.org/ontology/MESH/D009938</IRI>
+        <Literal>The secret service is an organization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.bioontology.org/ontology/MESH/D009938</IRI>
+        <Literal>An independent continuant that consists of groups of people working together in a structured manner to pursue common goals and objectives.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000233"/>
+        <IRI>http://purl.bioontology.org/ontology/MESH/D009938</IRI>
+        <Literal>https://github.com/hectorguzor/provisional_OntoEd/issues/28</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
+        <IRI>http://purl.bioontology.org/ontology/MESH/D009938</IRI>
+        <Literal>https://bioportal.bioontology.org/ontologies/MESH?p=classes&amp;conceptid=D009938</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.bioontology.org/ontology/MESH/D009938</IRI>
+        <Literal>organization</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#1000003</IRI>
@@ -83,6 +129,66 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
         <IRI>#1000003</IRI>
         <Literal>Dean of csusb for college of natural sciences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#1000005</IRI>
+        <Literal>A college is an educational institution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#1000005</IRI>
+        <Literal>An organization such as a public or private secondary school, vocational school, correspondence school, business school, junior college, teachers’ college, college, normal school, professional school, university, or scientific or technical institution, or any other institution if it furnishes education at the secondary school level or above.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000233"/>
+        <IRI>#1000005</IRI>
+        <Literal>https://github.com/hectorguzor/provisional_OntoEd/issues/28</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#1000005</IRI>
+        <Literal>Anthony Macias</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
+        <IRI>#1000005</IRI>
+        <Literal>https://www.law.cornell.edu/definitions/uscode.php?width=840&amp;height=800&amp;iframe=true&amp;def_id=38-USC-114775787-645874631&amp;term_occur=999&amp;term_src=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#1000005</IRI>
+        <Literal>educational institution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#1000006</IRI>
+        <Literal>CSUSB is a college.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#1000006</IRI>
+        <Literal>An educational institution or establishment, in particular one providing higher education or specialized professional or vocational training.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000233"/>
+        <IRI>#1000006</IRI>
+        <Literal>https://github.com/hectorguzor/provisional_OntoEd/issues/28</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#1000006</IRI>
+        <Literal>Anthony Macias</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
+        <IRI>#1000006</IRI>
+        <Literal>https://github.com/hectorguzor/provisional_OntoEd/issues/28</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#1000006</IRI>
+        <Literal>college</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
