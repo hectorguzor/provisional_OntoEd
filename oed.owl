@@ -22,6 +22,21 @@
         <Class IRI="http://purl.bioontology.org/ontology/MESH/D009938"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Academic_Curriculum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professor_Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student_Role"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#1000003"/>
     </Declaration>
     <Declaration>
@@ -34,6 +49,9 @@
         <Class IRI="oed.owl#1000004"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </Declaration>
     <Declaration>
@@ -41,6 +59,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000233"/>
@@ -51,9 +72,32 @@
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="http://purl.bioontology.org/ontology/MESH/D009938"/>
         <Class IRI="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Academic_Curriculum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor_Role"/>
+        <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student_Role"/>
+        <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#1000003"/>
@@ -70,6 +114,10 @@
     <SubClassOf>
         <Class IRI="oed.owl#1000004"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <Class IRI="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
@@ -99,6 +147,106 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.bioontology.org/ontology/MESH/D009938</IRI>
         <Literal>organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#Academic_Curriculum</IRI>
+        <Literal xml:lang="en">A curriculum for a high school algebra course might consist of homework assignments and practice sheets, online videos, and in class handouts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Academic_Curriculum</IRI>
+        <Literal xml:lang="en">A generically dependent continunt constituted by a collection of information content entities, each entity being about the same subject matter with some entities having a cumulative relationship with others , which imparts upon students proficient knowledge  of that subject matter and is determinative of successful completion of a course in that subject matter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#Academic_Curriculum</IRI>
+        <Literal xml:lang="en">Timothy Simmons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Academic_Curriculum</IRI>
+        <Literal xml:lang="en">Academic Curriculum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#Professor</IRI>
+        <Literal xml:lang="en">Hector is a professor of philosophy at Mt. San Jacinto College.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Professor</IRI>
+        <Literal xml:lang="en">A person that satisfies the professor role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#Professor</IRI>
+        <Literal xml:lang="en">Timothy Simmons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Professor</IRI>
+        <Literal xml:lang="en">Professor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#Professor_Role</IRI>
+        <Literal xml:lang="en">A person satisfying he professor role might conduct research in philosophical logic while also being the head of the philosophy department at their university.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Professor_Role</IRI>
+        <Literal xml:lang="en">A role in a higher educational institution consisting of conducting research in a field of expertise, leading lectures/seminars in that field of expertise, and taking on additional managerial roles such as department chair or lead researcher for a particular project or institute.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#Professor_Role</IRI>
+        <Literal xml:lang="en">Timothy Simmons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Professor_Role</IRI>
+        <Literal xml:lang="en">Professor Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#Student</IRI>
+        <Literal xml:lang="en">Timothy was a student at CSUSB.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Student</IRI>
+        <Literal xml:lang="en">A person that satisfies the student role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#Student</IRI>
+        <Literal xml:lang="en">Timothy Simmons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Student</IRI>
+        <Literal xml:lang="en">Student</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#Student_Role</IRI>
+        <Literal xml:lang="en">A person attending a university and taking courses in philosophy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Student_Role</IRI>
+        <Literal xml:lang="en">A role consisting in attending an educational institution and completing courses to obtain proficient knowledge in some specified subject(s).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#Student_Role</IRI>
+        <Literal xml:lang="en">Timothy Simmons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Student_Role</IRI>
+        <Literal xml:lang="en">Student Role</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -221,6 +369,31 @@
         <Literal>dean</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
+        <Literal xml:lang="en">A document detailing how to fix a computer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
+        <Literal xml:lang="en">A generically dependent continuant that is about some thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
+        <Literal xml:lang="en">Chris Stoeckert</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
+        <Literal>https://ontobee.org/ontology/IAO?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000030</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000030</IRI>
+        <Literal xml:lang="en">Information Content Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000112</IRI>
         <Literal>A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</Literal>
@@ -267,6 +440,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000119</IRI>
+        <Literal xml:lang="en">Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000119</IRI>
+        <Literal xml:lang="en">Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000119</IRI>
+        <Literal xml:lang="en">Daniel Schober</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000119</IRI>
+        <Literal xml:lang="en">definition source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000233</IRI>
         <Literal>the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/.</Literal>
     </AnnotationAssertion>
@@ -284,11 +477,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000233</IRI>
         <Literal>term tracker item</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>http://www.w3.org/ns/prov#Person</IRI>
-        <Literal>Lebron James is a person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -316,6 +504,11 @@
         <Literal>imported from</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://www.w3.org/ns/prov#Person</IRI>
+        <Literal>Lebron James is a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://www.w3.org/ns/prov#Person</IRI>
         <Literal>A person is an object that has certain capacities or attributes constituting personhood.</Literal>
@@ -338,5 +531,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
