@@ -37,6 +37,9 @@
         <Class IRI="#Student_Role"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#academic_course"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#1000003"/>
     </Declaration>
     <Declaration>
@@ -53,6 +56,18 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Attends"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Enrolled_In"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Teaches"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Teaches_At"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
@@ -100,6 +115,10 @@
         <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#academic_course"/>
+        <Class IRI="http://www.ifomis.org/bfo/1.1/span#Process"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#1000003"/>
         <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     </SubClassOf>
@@ -123,6 +142,78 @@
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
         <Class IRI="http://www.ifomis.org/bfo/1.1/snap#Object"/>
     </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Attends"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Enrolled_In"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Teaches"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Teaches_At"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Attends"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Enrolled_In"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Teaches"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Teaches_At"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#Attends"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#Enrolled_In"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#Teaches"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#Teaches_At"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Attends"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Enrolled_In"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Teaches"/>
+        <Class IRI="#Professor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Teaches_At"/>
+        <Class IRI="#Professor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Attends"/>
+        <Class IRI="#1000005"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Enrolled_In"/>
+        <Class IRI="#academic_course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Teaches"/>
+        <Class IRI="#academic_course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Teaches_At"/>
+        <Class IRI="#1000005"/>
+    </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
         <IRI>http://purl.bioontology.org/ontology/MESH/D009938</IRI>
@@ -247,6 +338,31 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Student_Role</IRI>
         <Literal xml:lang="en">Student Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#academic_course</IRI>
+        <Literal xml:lang="en">Philosophy 200 at CSUSB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#academic_course</IRI>
+        <Literal xml:lang="en">The process of lecturing, assessing, and crediting through which knowledge contained within an academic curriculum is imparted upon students.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#academic_course</IRI>
+        <Literal xml:lang="en">https://github.com/hectorguzor/provisional_OntoEd/issues/34</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#academic_course</IRI>
+        <Literal xml:lang="en">Timothy Simmons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#academic_course</IRI>
+        <Literal xml:lang="en">Academic Course</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
