@@ -1,6 +1,6 @@
 # provisional_oed
 
-This repository is designed for students learning ontology development. Its aim is to help students gain and enhance their ontology development skills by contributing to a provisional Ontology of Education (OED), which employs <a href="https://github.com/bfo-ontology/BFO-2020">the Basic Formal Ontology (BFO)</a> as a higher-order ontology.
+The repository is designed for students learning ontology development. Its aim is to help students gain and enhance their ontology development skills by contributing to a provisional Ontology of Education (OED), which employs <a href="https://github.com/bfo-ontology/BFO-2020">the Basic Formal Ontology (BFO)</a> as a higher-order ontology.
 
 The primary focus of OED is to define and represent entities and relationships in education, ranging from K-12 to postsecondary institutions. By defining classes such as organization, enrollment, assignment, assessment, and more, oed helps education professionals communicate clearly about educational services. This clear and precise vocabulary enables educational institutions to annotate, integrate, and analyze data to improve educational outcomes.
 
